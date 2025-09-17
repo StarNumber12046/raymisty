@@ -21,12 +21,12 @@ export function MistyActions({ imageUrl }: { imageUrl: string }) {
         title="Copy Image"
         icon={Icon.Image}
         onAction={() => copyUrlBlob(imageUrl)}
-        shortcut={{ modifiers: ["ctrl"], key: "c" }}
+        shortcut={{ modifiers: ["cmd"], key: "c" }}
       />
       <Action.CopyToClipboard
         title="Copy Image URL"
         content={imageUrl}
-        shortcut={{ modifiers: ["ctrl", "shift"], key: "c" }}
+        shortcut={{ modifiers: ["cmd", "shift"], key: "c" }}
       />
     </ActionPanel>
   );
