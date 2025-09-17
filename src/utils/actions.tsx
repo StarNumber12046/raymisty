@@ -1,4 +1,4 @@
-import { ActionPanel, Action, Clipboard, Toast, showToast, Icon, showHUD } from "@raycast/api";
+import { ActionPanel, Action, Clipboard, Icon, showHUD } from "@raycast/api";
 import fetch from "node-fetch";
 import tempy from "tempy";
 
