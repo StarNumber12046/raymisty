@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "misty",
+  "title": "Misty",
+  "description": "Images of Misty, readily available!",
+  "icon": "icon.png",
+  "author": "thomas",
+  "categories": [
+    "Fun",
+    "Web"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "misty-images",
+      "title": "Misty Images",
+      "description": "Display all images for Misty.",
+      "mode": "view"
+    },
+    {
+      "name": "random-image",
+      "title": "Random Misty Image",
+      "description": "Display a random image for Misty.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "latest",
+    "@tanstack/react-query": "^5.89.0",
+    "node-fetch": "^3.3.2",
+    "react-window": "^2.1.0",
+    "tempy": "^2.0.0",
+    "title-case": "^3.0.3"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@tanstack/eslint-plugin-query": "^5.89.0",
+    "@types/node": "18.18.4",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
